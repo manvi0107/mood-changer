@@ -101,5 +101,6 @@ function displayResult(mood) {
         <p>${moodData.quote}</p>
     `;
     songPlayer.src = moodData.song;
+    songPlayer.style.display = "block";
     songPlayer.play();
 }
