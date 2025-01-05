@@ -22,7 +22,7 @@ const moods = {
         quote: "“life is unfair so shutup and relax a bit and listen to your pasandida person.”"
     },
     Annoyed: {
-        song: "tensed.mp3",
+        song: "motivation.mp3",
         message: "Feeling annoyed? Shake it off with this track! 🎸",
         quote: "“Turn your frustration into motivation!”"
     }
@@ -68,11 +68,11 @@ function predictMood() {
     let mood = "Annoyed"; // Default mood
 
     // Mood prediction logic
-    if (selectedOptions.includes("FIFA") || selectedOptions.includes("Great") || selectedOptions.includes("Best friend")) {
+    if (selectedOptions.includes("FIFA") || selectedOptions.includes("Great") || selectedOptions.includes("Best friend") ||selectedOptions.includes("instagram") selectedOptions.includes("Bro")) {
         mood = "Happy";
-    } else if (selectedOptions.includes("Too lazy to play") || selectedOptions.includes("No one's there to text") || selectedOptions.includes("Alone")) {
+    } else if (selectedOptions.includes("Too lazy to play") || selectedOptions.includes("No one's there to text") || selectedOptions.includes("Alone") || selectedOptions.includes("useless")) {
         mood = "Sad";
-    } else if (selectedOptions.includes("Working out") || selectedOptions.includes("LinkedIn") || selectedOptions.includes("Chess")) {
+    } else if (selectedOptions.includes("Working out") || selectedOptions.includes("LinkedIn") || selectedOptions.includes("Chess") || selectedOptions.includes("Best friend")) {
         mood = "Tensed";
     }
 
