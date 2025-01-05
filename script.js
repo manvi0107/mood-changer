@@ -80,13 +80,15 @@ function predictMood() {
         selectedOptions.includes("Too lazy to play") ||
         selectedOptions.includes("No one's there to text") ||
         selectedOptions.includes("Alone") ||
-        selectedOptions.includes("Useless")
+        selectedOptions.includes("Useless")||
+        selectedOptions.includes("pops")
     ) {
         mood = "Sad";
     } else if (
         selectedOptions.includes("Working out") ||
         selectedOptions.includes("LinkedIn") ||
-        selectedOptions.includes("Chess")
+        selectedOptions.includes("Chess") ||
+        selectedOptions.includes("No one's there to text") ||
     ) {
         mood = "Tensed";
     }
