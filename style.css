@@ -1,0 +1,70 @@
+body {
+    background: linear-gradient(135deg, #ff00ff, #00ffff);
+    font-family: 'Courier New', monospace;
+    color: #ffffff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border: 3px solid #ff69b4;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #00ffcc;
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #ffccff;
+}
+
+button {
+    background-color: #ff69b4;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    color: #000;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    animation: shake 1s infinite;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+@keyframes neon-glow {
+    from {
+        text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    }
+    to {
+        text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc, 0 0 40px #00ffcc;
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
