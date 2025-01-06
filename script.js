@@ -36,7 +36,9 @@ const startButton = document.getElementById("start-btn");
 const resultContainer = document.getElementById("result");
 const songPlayer = document.getElementById("song");
 
+const startButton = document.getElementById("start-btn");
 startButton.addEventListener("click", startQuiz);
+
 
 function startQuiz() {
     startButton.style.display = "none";
