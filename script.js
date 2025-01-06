@@ -36,13 +36,12 @@ const startButton = document.getElementById("start-btn");
 const resultContainer = document.getElementById("result");
 const songPlayer = document.getElementById("song");
 
-const startButton = document.getElementById("start-btn");
+// Event listener for Start button
 startButton.addEventListener("click", startQuiz);
 
-
 function startQuiz() {
-    startButton.style.display = "none";
-    showQuestion();
+    startButton.style.display = "none"; // Hide Start button
+    showQuestion(); // Show the first question
 }
 
 function showQuestion() {
@@ -82,15 +81,14 @@ function predictMood() {
         selectedOptions.includes("Too lazy to play") ||
         selectedOptions.includes("No one's there to text") ||
         selectedOptions.includes("Alone") ||
-        selectedOptions.includes("Useless")||
-        selectedOptions.includes("pops")
+        selectedOptions.includes("Useless") ||
+        selectedOptions.includes("Pops")
     ) {
         mood = "Sad";
     } else if (
         selectedOptions.includes("Working out") ||
         selectedOptions.includes("LinkedIn") ||
-        selectedOptions.includes("Chess") ||
-        selectedOptions.includes("No one's there to text") ||
+        selectedOptions.includes("Chess")
     ) {
         mood = "Tensed";
     }
